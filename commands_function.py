@@ -62,13 +62,6 @@ def show_phone(args, contacts):
         raise KeyError
 
 
-# @input_error
-# def show_all(args, contacts):
-#     if len(args) != 0:
-#         raise Exception
-#     return contacts
-
-
 @input_error
 def show_all(args, contacts):
     formatted_list = []
