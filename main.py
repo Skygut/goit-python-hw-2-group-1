@@ -7,7 +7,7 @@ def main():
     while True:
         user_input = input("Enter a command: ")
         command, *args = commands_function.parse_input(user_input)
-        if command in ["close", "exit", "bye"]:
+        if command in ["close", "exit", "bye", "q"]:
             print("Good bye!")
             break
         elif command == "hello":
@@ -21,7 +21,7 @@ def main():
         elif command == "change":
             print(commands_function.change_contact(args, contacts))
         else:
-            print("Invalid command.")
+            print(f"Invalid command: {command}")
 
 
 if __name__ == "__main__":
