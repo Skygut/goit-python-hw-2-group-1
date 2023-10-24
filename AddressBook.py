@@ -10,8 +10,7 @@ class Field:
 
 
 class Name(Field):
-    def __init__(self, value):
-        self.value = value
+    pass
 
 
 class Phone(Field):
